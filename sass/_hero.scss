@@ -1,0 +1,45 @@
+.hero{
+    &__title{
+        color: #cdd866e4;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 100px;
+    }
+    &__text{
+       
+        color: #fff;
+        margin-top: 50px;
+        h2{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: 500;
+            color: #fff;
+            line-height: 30px;
+            cursor: pointer;
+        }
+    }
+    &__wrapper{
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    &__card{
+        width: 400px;
+        height: 250px;
+        background: rgb(1, 19, 37);
+        padding: 20px;
+        line-height: 30px;
+        border-radius: 20px;
+        overflow: scroll;
+        color: #d2e23ce4;
+    }
+    &__card::-webkit-scrollbar{
+        width: 0px;
+    }
+}

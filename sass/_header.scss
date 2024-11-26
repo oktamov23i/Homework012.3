@@ -1,0 +1,54 @@
+body{
+    background:darkslategray;
+}
+
+.header{
+    background: #000000c8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        &__item{
+            color: #fff;
+            font-size: 16px;
+            span{
+                margin-left: 30px;
+            }            
+        }  
+        span:hover{
+            color: brown;
+        }
+        &__menu{
+            display: none;
+            color: #fff;
+            font-size: 25px;
+        }
+    }
+    &__image{
+        width: 200px;
+    } 
+ 
+    
+}
+
+@media (max-width: 670px) {
+    .header{
+        .navbar{
+            &__menu{
+                display: block;
+            }
+            &__collection{
+                display: none;
+            }
+        }
+        &__image{
+            width: 180px;
+        } 
+        
+    }
+ 
+}

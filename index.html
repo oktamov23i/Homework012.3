@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feel.code</title>
+    <link rel="icon" href="./assets/photo_2024-10-26_09-45-40-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <img class="header__image" src="./assets/photo_2024-10-26_09-45-40-removebg-preview.png" alt="">
+                </div>
+                <ul class="navbar__collection">
+                    <li class="navbar__item">
+                        <a href="https://www.w3schools.com/js/default.asp"><span>Biz haqimizda</span></a>
+                        <a href="https://www.w3schools.com/js/js_functions.asp"><span>Darsliklar</span></a>
+                        <a href="Tel:+998885431775"><span>Murojat uchun</span></a>
+                    </li>
+                </ul>
+                <div class="navbar__menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__title">
+                    <h1>JavaScriptning Function mavzusi</h1>
+                </div>
+                <div class="hero__text">
+                    <h2>Function dasturning ma'lum bir bajaradigon bo'lag va functionlar qayta-qayta ishlaydi. <br> Function 3ga bo'linadi </h2>
+                    <h3>1. Function Decloration</h3>
+                    <h3>2. Function Expression</h3>
+                    <h3>3. Arrow Function</h3>
+                </div>
+                <div class="hero__wrapper">
+                    <div class="hero__card">
+                        <strong>1. Function Decloration misol keltiraman </strong>  <br>
+                        <strong>Function sayHello(){</strong> <br>
+                        <strong>console.log('Hello world')
+                            <br>}</strong> <br>
+                        <strong>sayHello()</strong> <br>
+                        <strong>qoida: Function Declorationda sayHello() ni tepada yozsa xam ishlaydi. </strong>
+                    </div>
+                    <div class="hero__card">
+                        <strong>2. Function Expression misol keltiraman </strong>  <br>
+                        <strong>let sayByeBye = function(){</strong> <br>
+                        <strong>console.log('sayByeBye function expression')
+                            <br>}</strong> <br>
+                        <strong>sayByeBye()</strong> <br>
+                        <strong>qoida: Function Expressionda sayByeBye() ni tepada yozsa ishlamaydi. </strong>
+                    </div>
+                    <div class="hero__card">
+                        <strong>3. Arrow function  misol keltiraman </strong>  <br>
+                        <strong>let nico = () => {</strong> <br>
+                        <strong>console.log(' This is arrow function')
+                            <br>}</strong> <br>
+                        <strong>nico()</strong> <br>
+                        <strong>qoida: Arrowda function ishlamaydi. </strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="container">
+                <div class="card__title">
+                    <h1>JavaScriptning Date mavzusi</h1>
+                </div>
+                <div class="card__text">
+                    <h2>Date bizga yilni, oyni, kuni, va soat vaqtini aniqlab beradi.<br><h2>
+                    <h3>Shularga bir nechta misollar keltiraman.</h3>
+                </div>  
+                <div class="card__wrapper">
+                    <div class="card__box">
+                        <strong>let now = newDate()</strong>  <br>
+
+                        <strong>let today = now.getDate() < 10 ? '0' + now.getDate() : now.getDate()</strong> <br>
+
+                        <strong>let month = now.getMonth() < 10 ? '0' + now.getMonth() : now.getMonth()</strong>
+                        <br>
+                        <strong>let year = now.getFullYear()</strong>
+                        <br>
+                        <strong>console.log('Today:', today)</strong> <br>
+                        <strong>console.log('Month:', month)</strong><br>
+                        <strong>console.log('Year:', year)</strong>
+                    </div>
+                    <div class="card__title">
+                       <h1>Date mavsusida soatni yasash</h1>
+                    </div>  
+                    <div class="card__box">
+                        <strong>let hour = now.getHours() < 10 ? '0' + now.getHours() : now.getHours()</strong> 
+                         <br>
+                        <strong>let minute = now.getMinutes() < 10 ? '0' + now.getMinutes() : now.getMinutes()</strong>
+                        <br>
+                        <strong>let second = now.getSeconds() < 10 ? '0' + now.getSeconds() : now.getSeconds()</strong>
+                        <br>
+
+                        <strong>console.log(`${hour}:${minute}:${second}`)</strong> <br>
+                    </div>
+                </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__text">
+                        <h2>© Mualliflik huquqi <a href="http://127.0.0.1:5500/index.html">Feel.code</a> Barcha huquqlar himoyalangan</h2>
+                    </div>
+                    <div class="footer__link">
+                        <a href="https://www.instagram.com/oktmv23/profilecard/?igsh=YXcyODRrc3ZxbnAw"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://t.me/@oktmv23"><i class="fa-brands fa-telegram"></i></a>
+                        <div class="footer__number">
+                            <a href="tel:+998885431775">+998885431775</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
